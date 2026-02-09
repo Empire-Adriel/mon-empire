@@ -1,0 +1,48 @@
+/* Le bouton ENTRER doré */
+#enterBtn {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  padding: 12px 25px;
+  background: #c9a100;
+  border: 2px solid #ffd700;
+  color: #000;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 0 15px #c9a100;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+#enterBtn:hover { 
+  box-shadow: 0 0 25px #ffd700;
+  background: #ffd700;
+}
+
+/* Le voile noir pour la page d'inscription */
+.page-inscription {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url('../System_UI/entree.jpg') center/cover no-repeat;
+}
+
+.page-inscription::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* L'effet assombri */
+  z-index: 0;
+}
+
+/* On s'assure que le contenu reste au-dessus du voile */
+.formulaire, .partenaires {
+  position: relative;
+  z-index: 1;
+}

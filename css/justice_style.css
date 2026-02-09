@@ -1,0 +1,64 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Tes fameuses bordures noires */
+.border-empire {
+    border: 15px solid #000000;
+    padding: 20px;
+    background: #2c2c2c;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    max-width: 800px;
+}
+
+.justice-container {
+    text-align: center;
+}
+
+h1 { color: #d4af37; text-transform: uppercase; letter-spacing: 2px; }
+
+.warning { color: #ff4d4d; border-bottom: 1px solid #ff4d4d; padding-bottom: 10px; }
+
+.lawyers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.lawyer-card {
+    background: #3d3d3d;
+    border: 2px solid #555;
+    padding: 15px;
+    width: 180px;
+    transition: 0.3s;
+}
+
+.lawyer-card:hover { border-color: #d4af37; transform: translateY(-5px); }
+
+.tenor { border: 2px solid #d4af37; background: #4a3b10; }
+
+.price { font-size: 1.5em; font-weight: bold; color: #d4af37; }
+
+button {
+    background: #d4af37;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#confirm-btn {
+    margin-top: 40px;
+    padding: 20px 40px;
+    font-size: 1.2em;
+    background: #b22222;
+    color: white;
+}
