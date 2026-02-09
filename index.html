@@ -134,17 +134,18 @@
     </div>
 
     <script>
-        function valider() {
-            const code = document.getElementById('cle').value;
-            if (code === "2872OK") {
-                window.location.href = encodeURI("manifest.json/présentation de l'empire.html");
-            } else {
-                alert("Clé invalide.");
-            }
-        }
-    </script>
+function valider() {
+    const code = document.getElementById('cle').value;
+    if (code === "AdrielCruze" || code === "2872OK") {
+        alert("Accès accordé ! Bienvenue dans l'Empire.");
+    } else {
+        alert("Clé invalide.");
+    }
+}
+</script>
 
 </body>
 
 </html>
+
 
